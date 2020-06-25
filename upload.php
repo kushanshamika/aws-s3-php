@@ -27,8 +27,7 @@ if(isset($_FILES['file'])){
         $s3->putObject([
             'Bucket' => $config['s3']['bucket'],
             'Key' => "uploads/{$tmp_file_name}",
-            'Body' => fopen($tmp_file_path, 'rb'),
-            'ACL'    => 'public-read'
+            'Body' => fopen($tmp_file_path, 'rb')
         ]);
 
         // Remove the file
