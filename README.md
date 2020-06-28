@@ -22,6 +22,7 @@ return [
         'bucket' => 'xcopet',
         'region' => 'ap-south-1',
         'version' => 'latest',
+        'endpoint' => 'https://sgp1.digitaloceanspaces.com' // Required only for Digitalocean spaces
     ]
 ]
 ```

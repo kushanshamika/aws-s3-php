@@ -12,7 +12,8 @@ $s3 = S3Client::factory([
     ),
     'bucket' => $config['s3']['bucket'],
     'region' => $config['s3']['region'],
-    'version' => $config['s3']['version']
+    'version' => $config['s3']['version'],
+    'endpoint' => $config['s3']['endpoint'] // Required only for Digitalocean spaces
 ])
 
 ?>
